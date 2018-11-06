@@ -111,7 +111,7 @@
 				</a>
 			</div>
         </div>
-		<div class="container">
+		<div class="container m-b-1">
 			<div class="row">
 				<div class="col-12"><div class="title">Компания «Фабрика Жалюзи» пердлагает 3 типа завес:</div></div>
 				<div class="col-sm-4">
@@ -173,27 +173,33 @@
 				</div>
 			</div>
 		</div>
-		<div class="container-fluid">
+		<div class="container-fluid calc-bg m-b-1">
 			<div class="container">
 				<div class="row">
-					<div class="col-12"><div class="title white">Рассчитайте приблизительную стоимость</div></div>
 					<div class="col-12">
-						<label>
-							Введите ширину
-							<input type="text" name="width" id="width">
-						</label>
-						<label>
-							высоту
-							<input type="text" name="height" id="height">
-						</label>
-						<label>
-							<select name="calc_select" id="calc_select">
-								<option value="0">Морозостойкие</option>
-								<option value="1">Стандартные</option>
-								<option value="2">Специальные</option>
-							</select>
-						</label>
-						<div class="btn blue" id="calc_btn">Рассчитать!</div>
+						<div class="title white">Рассчитайте приблизительную стоимость</div>
+					</div>
+					<div class="col-sm-8">
+						<div class="calc-inputs">
+							<label>
+								Введите ширину
+								<input type="text" name="width" id="width" class="inp"> м
+							</label>
+							<label>
+								высоту
+								<input type="text" name="height" id="height" class="inp"> м
+							</label>
+							<label>
+								<select name="calc_select" id="calc_select" class="inp">
+									<option value="0">Морозостойкие</option>
+									<option value="1">Стандартные</option>
+									<option value="2">Специальные</option>
+								</select>
+							</label>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="btn blue m-b_1" id="calc_btn">Рассчитать!</div>
 					</div>
 				</div>
 				<div class="row">
@@ -210,86 +216,114 @@
 						</div>
 					</div>
 					<div class="col-sm-4">
-						<div class="calc-title">Итоги рассчета</div>
+						<div class="calc-title">Содержание комплекта</div>
 						<div class="calc-list">
 							<div class="calc-list-elem"><div class="cle-name">Кол-во полос</div><div class="cle-vol"><span id="quant_length">64</span> шт</div></div>
 							<div class="calc-list-elem"><div class="cle-name">Количество пластин</div><div class="cle-vol"><span id="quant_plates">64</span> шт</div></div>
 							<div class="calc-list-elem"><div class="cle-name">Металлическая гребенка</div><div class="cle-vol"><span id="metal_comb">64</span> м</div></div>
 						</div>
-					</div>
-					<div class="col-sm-4">
 						<div class="calc-title">Харктеристика комплекта</div>
 						<div class="calc-list">
-							<div class="cle-name">Типоразмер</div>
-							2*200
-							<div class="cle-name">Нахлест</div>
-							40%,соседние полосы в нахлест на 1проушину
-							с каждой стороны на 4 мм
+							<div class="calc-list-elem">
+								<div class="cle-name b">Типоразмер</div>
+								<div class="cle-vol"><span id="type_size">2*200</span> шт</div>
+							</div>
+							<div class="calc-list-elem">
+								<div class="cle-name b f-none">Нахлест: </div>
+								<div class="cle-descr">
+									40%,соседние полосы в нахлест на 1проушину
+									с каждой стороны на 4 мм
+								</div>
+							</div>
 						</div>
 					</div>
 					<div class="col-sm-4">
 						<div class="calc-title">Закажите прямо сейчас!</div>
 						<div class="calc-form">
 							<form action="" method="post" id="calc-form">
-								<label><input type="text" name="your-name"></label>
-								<label><input type="text" name="your-number"></label>
-								<div class="btn blue" id="calc_form_btn">Рассчитать!</div>
+								<div class="row">
+									<div class="col-6">
+										<label><input type="text" name="your-name" class="inp" placeholder="Имя"></label>
+									</div>
+									<div class="col-6">
+										<label><input type="text" name="your-number" class="inp" placeholder="Номер"></label>
+									</div>
+								</div>
+								<div class="btn blue" id="calc_form_btn">Заказать сейчас!</div>
 							</form>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="container">
+		<div class="container m-b-1">
 			<div class="row">
-				<div class="col-sm-2">
+				<div class="col-sm-3">
 					<img src="/images/car.png" alt="car icon">
 				</div>
-				<div class="col-sm-10">
-					<div class="title">Доступна доставка по всей России и Казахстану</div>
-					<div class="sub-title">Вы можете рассчитать доставку до вашего города в любой из транспортных компаний, мы доставим до места отправки в нашем городе совершенно бесплатно!</div>
-					<div class="btn blue" data-toggle="modal" data-target="#exampleModal">Рассчитать!</div>
+				<div class="col-sm-9">
+					<div class="dost">
+						<div class="title">Доступна доставка по всей России и Казахстану</div>
+						<div class="sub-title">Вы можете рассчитать доставку до вашего города в любой из транспортных компаний, мы доставим до места отправки в нашем городе
+							совершенно бесплатно!
+						</div>
+						<div class="btn blue" data-toggle="modal" data-target="#exampleModal">Рассчитать!</div>
+					</div>
 				</div>
 			</div>
 		</div>
-		<div class="container-fluid">
+		<div class="container-fluid adv-bg">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12"><div class="title">Преимущества ПВХ завес</div></div>
 					<div class="col-sm-6">
-						<img src="" alt="">
+						<img src="images/adv_rul.png" alt="пвх завесы">
 					</div>
 					<div class="col-sm-6">
-						<div class="popular-elem"><img src="images/orange_point.png" alt="oранжевая иконка">Сохраняют до 50% тепла или холодного воздуха</div>
-						<div class="popular-elem"><img src="images/orange_point.png" alt="oранжевая иконка">Изолируют от проникновения животных и насекомых</div>
-						<div class="popular-elem"><img src="images/orange_point.png" alt="oранжевая иконка">Регулируют воздухообмен и воздушные потоки</div>
-						<div class="popular-elem"><img src="images/orange_point.png" alt="oранжевая иконка">Ограничивают зону сварочных работ</div>
-						<div class="popular-elem"><img src="images/orange_point.png" alt="oранжевая иконка">Подходят под все типы проемов</div>
+						<div class="popular-list">
+							<div class="popular-elem"><img src="images/orange_point.png" alt="oранжевая иконка">Сохраняют до 50% тепла или холодного воздуха</div>
+							<div class="popular-elem"><img src="images/orange_point.png" alt="oранжевая иконка">Изолируют от проникновения животных и насекомых</div>
+							<div class="popular-elem"><img src="images/orange_point.png" alt="oранжевая иконка">Регулируют воздухообмен и воздушные потоки</div>
+							<div class="popular-elem"><img src="images/orange_point.png" alt="oранжевая иконка">Ограничивают зону сварочных работ</div>
+							<div class="popular-elem"><img src="images/orange_point.png" alt="oранжевая иконка">Подходят под все типы проемов</div>
+						</div>
 						<div class="popular-elem">Также завесы можно использовать в местах, где раскрытие дверей невозможно.</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="container-fluid">
+			<div id="map_contact"></div>
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-6">
+					<div class="col-sm-7 offset-sm-5">
 						<div class="about-com">
-							<div class="ac-title">О нас</div>
-							<div>г.Омск, ул 10 лет Октября 193/2</div>
-							<div><a href="mailto:info@fabrika55.ru">info@fabrika55.ru</a></div>
-							<div><a href="tel:83812790379">8(3812)79-03-79</a></div>
+							<div class="ac-title">Фабрика Жалюзи</div>
+							<div>Мы предлагаем только качественный товар, оптимальные цены на росийском рынке и кратчайшие сроки изготовления продукта любой сложности. Наши контакты:</div>
+							<div class="ab-us-text">
+								<div>г.Омск, ул 10 лет Октября 193/2</div>
+								<div><a href="mailto:info@fabrika55.ru">info@fabrika55.ru</a></div>
+								<div><a href="tel:83812790379">8(3812)79-03-79</a></div>
+							</div>
 							<div class="callback">
-								<div>
-									Заказать обратный звонок!
-									Наши мененджеры свяжутся с Вами в ближайшее время
+								<div class="row">
+									<div class="col-sm-5">
+										<div class="callback-text">
+											Заказать обратный звонок!<br>
+											<span>Мененджеры свяжутся с Вами в ближайшее время!</span>
+										</div>
+									</div>
+									<div class="col-sm-7">
+										<div class="callback-form">
+											<form action="" method="post" id="callback-form">
+												<label><input type="text" name="your-number" class="inp"></label>
+												<div class="btn blue" id="callback_form_btn">Заказать</div>
+											</form>
+										</div>
+									</div>
 								</div>
-								<div class="callback-form">
-									<form action="" method="post" id="callback-form">
-										<label><input type="text" name="your-number"></label>
-										<div class="btn blue" id="callback_form_btn">Рассчитать!</div>
-									</form>
-								</div>
+
+
 							</div>
 						</div>
 					</div>
@@ -302,13 +336,13 @@
 			<div class="row">
 				<div class="col-sm-4">
 					<div class="logo-footer">
-						<img src="" alt="">
+						<img src="/images/logo_w.svg" alt="фабрика жалюзи">
 					</div>
 				</div>
-				<div class="col-sm-4">
+				<div class="col-sm-6">
 					<div class="footer-text">Находясь на нашем сайте вы подписываете пользовательское соглашение</div>
 				</div>
-				<div class="col-sm-4">
+				<div class="col-sm-2">
 					<div class="footer-social">
 						<a href=""><span class="icon-odnoklassniki"></span></a>
 						<a href=""><span class="icon-google-plus"></span></a>
@@ -353,5 +387,24 @@
 <script src="js/jquery.js"></script>
 <script src="bootstrap/js/bootstrap.js"></script>
 <script src="js/script.js"></script>
+
+
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+<script type="text/javascript">
+    ymaps.ready(function () {
+        var myMap = new ymaps.Map('map_contact', {
+                center: [54.987962, 73.433654],
+                zoom: 16,
+                controls: []
+            }),
+            // Создаём макет содержимого.
+            MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+                '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+            ),
+            myPlacemarkWithContent = new ymaps.Placemark([54.987962, 73.433654], {});
+        myMap.geoObjects
+            .add(myPlacemarkWithContent);
+    });
+</script>
 </body>
 </html>
