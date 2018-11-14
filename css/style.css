@@ -128,7 +128,7 @@ body {
 }
 .blue {
     background-color: #55acee;
-    box-shadow: 0 5px 0 0#3C93D5;
+    box-shadow: 0 5px 0 0 #3C93D5;
 }
 .calc-bg{
 	background: url("/images/calc_bg.png")  top center no-repeat;
@@ -339,6 +339,84 @@ body {
 }
 .icon-instagram:before {
     content: "\ea92";
+}
+.item-modal div, .list-items-head div{
+	display: inline-block;
+}
+.item-name{
+	width: 20rem;
+}
+.compl .item-name{
+    font-size: 12px;
+}
+.minus, .plus{
+	width: 1.2rem;
+	height: 1.2rem;
+	border-radius: 50px;
+	/*background-color: #3C93D5;*/
+	background: -moz-linear-gradient(0deg, #6fd3fd 0%,  #47b6e5 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(0deg, #6fd3fd 0%,#47b6e5 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(0deg, #6fd3fd 0%,#47b6e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	color: #fafdfe;
+	text-align: center;
+	line-height: 19px;
+}
+.inp-modal{
+	border-radius: 5px;
+	padding-left: 0.5rem;
+	width: 4rem;
+	border: 1px solid #47b6e5;
+}
+ .item-inp{
+	width: 7rem;
+}
+.list-items-modal .item-sum{
+	width: 4rem;
+	text-align: center;
+}
+.item-sum,.item-price{
+	width: 3rem;
+}
+.list-items-head .item-name{
+	width: 18rem;
+}
+.list-items-head .item-price{
+	width: 5.3rem;
+}
+
+.list-items-head{
+	font-weight: bold;
+}
+.form-modal{
+    border-radius: 5px;
+    background-color: #083b5d;
+    padding: 1rem;
+    color: #fafdfe;
+}
+.form-modal-text{
+    font-size: 12px;
+}
+.form-modal-inp .btn{
+    width: 187px;
+    height: 46px;
+    vertical-align: top;
+}
+.total-modal{
+    font-weight: bold;
+    clear: both;
+    height: 2rem;
+    border-top: 2px solid #47b6e5;
+}
+.total-text{
+    float: left;
+}
+.total-num{
+    float: right;
+}
+@media screen and (min-width: 575px){
+    .modal-dialog {
+        max-width: 600px;
+    }
 }
 @media screen and (max-width: 1200px){
    
