@@ -290,6 +290,9 @@ body {
     margin-top: 10px;
     font-size: 1rem;
 }
+.btn-header:hover{
+    color: #fafdfe;
+}
 #calc_hidden_block{
     display: none;
 }
@@ -413,6 +416,7 @@ body {
 .total-num{
     float: right;
 }
+
 @media screen and (min-width: 575px){
     .modal-dialog {
         max-width: 600px;
