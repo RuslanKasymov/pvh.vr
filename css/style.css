@@ -31,6 +31,7 @@ body {
     height: 100%;
     color: #333333;
     font-family: 'MyriadPro', arial;
+    background: #fafdfe;
 }
 .wrapper {
     display: flex;
@@ -295,6 +296,7 @@ body {
 }
 #calc_hidden_block{
     display: none;
+    padding-bottom: 1rem;
 }
 @font-face {
     font-family: 'icomoon';
@@ -416,7 +418,20 @@ body {
 .total-num{
     float: right;
 }
-
+.top-header{
+    position: fixed;
+    top: 0;
+    background: #fafdfe;
+    z-index: 999999;
+}
+.top-header-hidden{
+    height: 70px;
+}
+.gray-line-block{
+    width: 0;
+    border-bottom: 2px solid #909090;
+    margin: 0 auto;
+}
 @media screen and (min-width: 575px){
     .modal-dialog {
         max-width: 600px;
@@ -444,3 +459,15 @@ body {
     
 }
 
+.animated:hover {/*Не работает*/
+    -webkit-transition: all 0.3s ease;;
+    -moz-transition: all 0.3s ease;;
+    -o-transition: all 0.3s ease;;
+    transition: all 0.3s ease;
+}
+.animated {/*Не работает*/
+    -webkit-transition: all 0.3s ease;;
+    -moz-transition: all 0.3s ease;;
+    -o-transition: all 0.3s ease;;
+    transition: all 0.3s ease;
+}
